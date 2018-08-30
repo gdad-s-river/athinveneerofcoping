@@ -4,18 +4,29 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    // 'gatsby-plugin-sass',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'A Thin Veneer Of Coping',
+        short_name: `Poetry Album`,
         start_url: '/',
-        background_color: '#6954a3',
-        theme_color: '#6954a3',
+        background_color: '#c589ba',
+        theme_color: '#8465ac',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/images/cover.jpg',
       },
     },
+    `gatsby-plugin-sass`,
     'gatsby-plugin-offline',
   ],
 }

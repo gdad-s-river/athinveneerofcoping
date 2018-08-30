@@ -1,0 +1,38 @@
+@import '../../scss/variables.scss';
+
+.buy-button-container {
+  text-align: center;
+  width: 100%;
+  // padding: 20px;
+
+  @media #{$tablet} {
+    text-align: left;
+  }
+
+  &.indian-link {
+    margin: 15px 0;
+  }
+
+  &.international-link {
+    margin: 0 0 5px;
+  }
+
+  .buy-button {
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #fbc5ec;
+    box-shadow: rgb(34, 34, 34) 4px 4px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+    border-image: initial;
+    border-radius: 5px;
+    padding: 6px 12px;
+    text-decoration: none;
+    &:hover {
+      box-shadow: rgb(34, 34, 34) 2px 2px 0px;
+    }
+  }
+}
