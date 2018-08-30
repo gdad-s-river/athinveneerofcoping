@@ -26,7 +26,8 @@ module.exports = {
         icon: 'src/assets/images/cover.jpg',
       },
     },
-    `gatsby-plugin-sass`,
+		`gatsby-plugin-sass`,
+		`gatsby-plugin-sitemap`
     'gatsby-plugin-offline',
   ],
 }
